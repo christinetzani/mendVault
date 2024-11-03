@@ -1,0 +1,29 @@
+/* Navbar-specific styles */
+.navbar {
+  width: 100%; /* Make sure navbar spans the full width */
+  padding: 10px;
+  background-color: #f9fffa;
+}
+
+/* Make the ul a flex container for the nav links */
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Distribute links evenly */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure the ul takes full width */
+}
+
+/* Styling for individual links */
+.navbar a {
+  color: #97ceaa;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Active link styling */
+.navbar a.active {
+  color: #4a00ff;
+}

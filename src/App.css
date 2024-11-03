@@ -1,0 +1,40 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the whole app */
+.app-container {
+  background-color: #f9fffa;
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dashboard section */
+.main-dashboard {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  padding: 150px 100px;
+}
+
+/* Button styles */
+.dashboard-button {
+  width: 400px;
+  height: 100px;
+  background-color: #aff4c6;
+  color: #4a00ff;
+  border: none;
+  font-size: 18px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #4a00ff;
+  color: #aff4c6;
+}

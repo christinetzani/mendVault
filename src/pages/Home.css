@@ -1,0 +1,24 @@
+.main-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+.dashboard-button {
+  background-color: #aff4c6;
+  color: #4a00ff;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #4a00ff;
+  color: #aff4c6;
+}
