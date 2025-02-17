@@ -1,29 +1,36 @@
 /* Navbar-specific styles */
 .navbar {
-  width: 100%; /* Make sure navbar spans the full width */
+  width: 100%; /* Ensure navbar spans the full width */
   padding: 10px;
-  background-color: #f9fffa;
+  background-color: #cdcfff;
+  display: flex; /* Flexbox for row layout */
+  justify-content: space-evenly; /* Center content horizontally */
+  align-items: center; /* Vertically center if needed */
 }
 
 /* Make the ul a flex container for the nav links */
 .navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; /* Distribute links evenly */
-  list-style-type: none;
+  display: flex; /* Flex container */
+  flex-direction: row; /* Items arranged in a row (this is the default) */
+  justify-content: space-around; /* Evenly distribute links */
+  list-style-type: none; /* Remove list bullet points */
   padding: 0;
   margin: 0;
   width: 100%; /* Ensure the ul takes full width */
+  gap: 20px; /* Add space between the nav items */
+}
+li::marker {
+  color: #cdcfff;
 }
 
 /* Styling for individual links */
 .navbar a {
-  color: #97ceaa;
+  color: #2f00a5;
   text-decoration: none;
   padding: 10px;
 }
 
 /* Active link styling */
 .navbar a.active {
-  color: #4a00ff;
+  color: #97ceaa;
 }

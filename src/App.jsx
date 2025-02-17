@@ -1,26 +1,36 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"; // Layout component that includes Navbar and Outlet
 import Home from "./pages/Home";
-import Profile from "./pages/Profile";
-import Messages from "./pages/Messages";
-import Search from "./pages/Search";
-import "./App.css";
+import MakeAnAppointment from "./pages/MakeAnAppointment";
+import MedicalRecords from "./pages/MedicalRecords";
+import Medication from "./pages/Medication";
+import OnDuty from "./pages/OnDuty";
+import NewAppointment from "./pages/NewAppointment";
+import ViewAppointments from "./pages/ViewAppointments";
+import Profile from "./pages/Profile"; // Ensure Profile is imported
+import Messages from "./pages/Messages"; // Ensure Messages is imported
+import Search from "./pages/Search"; // Ensure Search is imported
 
 function App() {
   return (
     <Router>
-      <div className="navbar">
-        <Navbar />
-      </div>
-      <div className="app-container">
-        <Routes>
-          <Route path="/" element={<Home />} />
+      <Routes>
+        {/* The Layout will wrap the Navbar and other page content */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/make-an-appointment" element={<MakeAnAppointment />} />
+          <Route path="/medical-records" element={<MedicalRecords />} />
+          <Route path="/medication" element={<Medication />} />
+          <Route path="/on-duty" element={<OnDuty />} />
+          <Route path="/new-appointment" element={<NewAppointment />} />
+          <Route path="/view-appointments" element={<ViewAppointments />} />
+
+          {/* Add routes for Profile, Messages, and Search */}
           <Route path="/profile" element={<Profile />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/search" element={<Search />} />
-        </Routes>
-      </div>
+        </Route>
+      </Routes>
     </Router>
   );
 }

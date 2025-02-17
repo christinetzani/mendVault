@@ -7,29 +7,27 @@
 
 /* Container for the whole app */
 .app-container {
-  background-color: #f9fffa;
+  background-color: #cdcfff;
   height: 100vh; /* Full height */
-  display: flex;
-  flex-direction: column;
 }
 
 /* Dashboard section */
 .main-dashboard {
-  display: grid;
-  place-items: center;
-  gap: 20px;
-  padding: 150px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* Button styles */
 .dashboard-button {
-  width: 400px;
-  height: 100px;
-  background-color: #aff4c6;
-  color: #4a00ff;
-  border: none;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  background-color: #e4fdec;
+  color: #535bf2;
+  border-style: solid;
   font-size: 18px;
-  border-radius: 40px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
