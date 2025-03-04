@@ -4,7 +4,7 @@ import "./Home.css";
 
 export default function MakeAnAppointment() {
   return (
-    <div className="appointment-container">
+    <div className="main-dashboard">
       <Link to="/new-appointment">
         <button className="dashboard-button">Make a New Appointment</button>
       </Link>

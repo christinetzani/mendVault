@@ -7,8 +7,9 @@ export default function Layout() {
     <div>
       <Navbar /> {/* The navbar will always be visible */}
       <div className="app-container">
-        <Outlet />
-        {/* This is where the content of the current route will render */}
+        <div className="page-content">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

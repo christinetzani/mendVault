@@ -1,25 +1,17 @@
-.main-dashboard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
-  flex-direction: column;
+* {
   background-color: #cdcfff;
 }
 
-.dashboard-button {
-  background-color: #aff4c6;
-  color: #4a00ff;
-  border: none;
-  padding: 15px 30px;
-  margin: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.main-dashboard {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  margin-top: 300px; /* Space between Navbar and Buttons */
+  margin-bottom: 300px; /* Space between Navbar and Buttons */
 }
 
+/* Optional: Add hover shadow effect */
 .dashboard-button:hover {
-  background-color: #4a00ff;
-  color: #aff4c6;
+  box-shadow: 0 0 15px rgba(74, 0, 255, 0.6);
 }

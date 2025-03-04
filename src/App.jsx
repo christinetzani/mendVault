@@ -10,6 +10,7 @@ import ViewAppointments from "./pages/ViewAppointments";
 import Profile from "./pages/Profile"; // Ensure Profile is imported
 import Messages from "./pages/Messages"; // Ensure Messages is imported
 import Search from "./pages/Search"; // Ensure Search is imported
+import "./index.css"; // Import this at the top of index.js or App.js
 
 function App() {
   return (

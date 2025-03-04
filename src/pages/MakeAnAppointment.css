@@ -19,7 +19,7 @@
   transition: background-color 0.3s ease;
 }
 
-.dashboard-button:hover {
+/* .dashboard-button:hover {
   background-color: #4a00ff;
   color: #aff4c6;
 }
