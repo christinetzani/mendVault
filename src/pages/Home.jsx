@@ -14,9 +14,9 @@ export default function Home() {
       <Link to="/medication">
         <button className="dashboard-button">Medication</button>
       </Link>
-      <Link to="/on-duty">
+      {/* <Link to="/on-duty">
         <button className="dashboard-button">On Duty</button>
-      </Link>
+      </Link> */}
     </div>
   );
 }

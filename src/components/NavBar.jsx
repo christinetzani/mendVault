@@ -12,9 +12,9 @@ export default function Navbar() {
         <li>
           <Link to="/profile">Profile</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/messages">Messages</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/search">Search</Link>
         </li>
